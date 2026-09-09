@@ -22,6 +22,14 @@ Fix: rewrote those lines to use "Role at Company" instead of "Role | Company," r
 
 Takeaway: avoid `|` in Markdown prose entirely, even outside of intentional tables. It's a reserved character in GFM-flavored Markdown, and the failure mode (silent misrender, not an error) makes it an easy one to miss until you actually look at the rendered page.
 
+## Session 3: mobile layout
+
+Added a media query breakpoint at 640px in `style.css` rather than a separate "mobile page." Jekyll doesn't generate different HTML per device, one set of pages, and CSS media queries handle the layout differences at different screen widths. The viewport meta tag needed for any of this to work was already in `_layouts/default.html` from the first build.
+
+Changes at the breakpoint: nav centers and wraps instead of sitting flush right, the quick-links cards on the home page stack into a single column instead of trying to fit a grid, and a few font sizes shrink slightly (job dates, contact line) so long text wraps cleanly instead of crowding.
+
+No JavaScript hamburger menu, four nav links wrapping onto their own line reads fine on a phone without needing one. Worth revisiting if the nav ever grows past four or five items.
+
 ## Open items to resolve
 
 - **Intuit end date discrepancy.** The resume PDF lists the Intuit role as "March 2026 – September 2026." LinkedIn lists it as "March 2026 – Present." We went with Present since that matches an ongoing role, but worth double-checking which is actually correct and updating `resume.md`.
