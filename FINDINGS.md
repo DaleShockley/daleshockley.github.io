@@ -12,6 +12,16 @@ A running log of decisions, tradeoffs, and things learned while building this si
 
 **Resume page merges two sources.** The resume PDF has stronger, quantified bullet points for recent roles. The LinkedIn export has a longer work history further back. We used the PDF's bullets for the five most recent roles and condensed everything before that (eGain back through Tyco Electronics) into single-line summaries under "Earlier Experience," a pretty standard portfolio-site convention, nobody needs full bullet detail on a job from 2007.
 
+## Session 2: the pipe-character bug
+
+Dale spotted the "Earlier Experience" section on the resume page rendering as a mangled table, with literal `**` asterisks showing instead of bold text.
+
+Cause: kramdown (the Markdown processor GitHub Pages uses) treats the `|` pipe character as table syntax. Each bullet in that section was written as `**Role | Company** — dates. Description.` and there were six of them in a row, each with exactly one pipe. Kramdown's table detection saw a run of consecutive lines that each contained a pipe and parsed the whole block as a table instead of a bullet list, which is also why the bold markup never got processed, it was being read as table cell content, not a plain paragraph.
+
+Fix: rewrote those lines to use "Role at Company" instead of "Role | Company," removing the pipe entirely. The other experience entries used `|` inside heading lines (`### Title | Company`), which didn't trigger this, single heading lines aren't table candidates. The bug only shows up when several pipe-containing lines sit next to each other in a plain list or paragraph.
+
+Takeaway: avoid `|` in Markdown prose entirely, even outside of intentional tables. It's a reserved character in GFM-flavored Markdown, and the failure mode (silent misrender, not an error) makes it an easy one to miss until you actually look at the rendered page.
+
 ## Open items to resolve
 
 - **Intuit end date discrepancy.** The resume PDF lists the Intuit role as "March 2026 – September 2026." LinkedIn lists it as "March 2026 – Present." We went with Present since that matches an ongoing role, but worth double-checking which is actually correct and updating `resume.md`.

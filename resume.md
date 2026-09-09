@@ -99,16 +99,16 @@ permalink: /resume/
 
 ### Earlier Experience
 
-- **Sr. Delivery Manager, Scrum Master | eGain Corporation** — Oct 2014 – May 2017, Sunnyvale, CA. Led cloud transition initiatives, accelerating time-to-market 35% and safeguarding $3.4M in revenue through improved client retention.
-- **Senior Technical Project Manager, Scrum Master | Sequent Software, Inc.** — Apr 2011 – May 2014, Mountain View, CA. Reduced product launch timelines 29% through executive-aligned MVP planning.
-- **Senior Project Manager, Scrum Master | Math Solutions** — Feb 2011 – Apr 2011.
-- **Project Manager | Harmonic** — Aug 2010 – Dec 2010.
-- **Project Manager, Professional Services | ViVOtech, Inc.** — Jun 2007 – Jul 2010. Directed first-generation NFC payment reader rollout, growing market share 75%.
-- **Program Manager | Tyco Electronics** — Aug 1999 – Jun 2007. Managed large-scale engineering and product programs across global deployments.
+- **Sr. Delivery Manager, Scrum Master at eGain Corporation**, Oct 2014 to May 2017, Sunnyvale, CA. Led cloud transition initiatives, accelerating time-to-market 35% and safeguarding $3.4M in revenue through improved client retention.
+- **Senior Technical Project Manager, Scrum Master at Sequent Software, Inc.**, Apr 2011 to May 2014, Mountain View, CA. Reduced product launch timelines 29% through executive-aligned MVP planning.
+- **Senior Project Manager, Scrum Master at Math Solutions**, Feb 2011 to Apr 2011.
+- **Project Manager at Harmonic**, Aug 2010 to Dec 2010.
+- **Project Manager, Professional Services at ViVOtech, Inc.**, Jun 2007 to Jul 2010. Directed first-generation NFC payment reader rollout, growing market share 75%.
+- **Program Manager at Tyco Electronics**, Aug 1999 to Jun 2007. Managed large-scale engineering and product programs across global deployments.
 
 ## Education & Certifications
 
-**Master of Science, Engineering Management** — Santa Clara University
-**Bachelor of Science, Electrical Engineering** — California State Polytechnic University, Pomona
+**Master of Science, Engineering Management**, Santa Clara University
+**Bachelor of Science, Electrical Engineering**, California State Polytechnic University, Pomona
 
 Certifications: PMP (in progress), AWS Cloud Practitioner (in progress), CSM, CSPO, ICAgile ICP-ACC/ICP-ATF/ICP-CAT, Pro Kanban I, SAFe Program Consultant (SPC), Release Train Engineer (RTE), Lean Portfolio Manager (LPM), ORSC Trained.
