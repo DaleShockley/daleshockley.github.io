@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="hero">
+  {{ content }}
+</div>
+
+<div class="quick-links">
+  <a class="quick-links__card" href="{{ '/resume/' | relative_url }}">
+    <h3>Resume</h3>
+    <p>Where I've worked and what I've shipped.</p>
+  </a>
+  <a class="quick-links__card" href="{{ '/projects/' | relative_url }}">
+    <h3>Projects</h3>
+    <p>Things I've built, with the reasoning behind them.</p>
+  </a>
+  <a class="quick-links__card" href="{{ '/hobbies/' | relative_url }}">
+    <h3>Hobbies</h3>
+    <p>What I do when I'm not staring at a Gantt chart.</p>
+  </a>
+</div>

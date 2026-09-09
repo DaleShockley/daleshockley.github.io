@@ -1,0 +1,39 @@
+title: Dale Shockley
+description: Technical Program Manager — release management, AI platform delivery, and enterprise program execution.
+url: "https://daleshockley.github.io"
+baseurl: ""
+
+author:
+  name: Dale Shockley
+  email: dale_shockley@yahoo.com
+  linkedin: https://www.linkedin.com/in/daleshockley/
+  github: https://github.com/DaleShockley
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - FINDINGS.md
+  - vendor

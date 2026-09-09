@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__name" href="{{ '/' | relative_url }}">Dale Shockley</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/resume/' | relative_url }}" {% if page.url == '/resume/' %}aria-current="page"{% endif %}>Resume</a>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+      <a href="{{ '/hobbies/' | relative_url }}" {% if page.url == '/hobbies/' %}aria-current="page"{% endif %}>Hobbies</a>
+    </nav>
+  </div>
+</header>

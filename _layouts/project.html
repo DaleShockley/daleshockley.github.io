@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="project">
+  <a class="project__back" href="{{ '/projects/' | relative_url }}">&larr; All projects</a>
+  <h1>{{ page.title }}</h1>
+
+  {% if page.tech %}
+  <ul class="tag-list">
+    {% for item in page.tech %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.link %}
+  <p class="project__link"><a href="{{ page.link }}" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
+  {% endif %}
+
+  <div class="project__body">
+    {{ content }}
+  </div>
+</article>
